@@ -1,0 +1,1005 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Food Palace</title>
+    <meta content="Best Eatery Around" name="description">
+    <meta content="George Saning'o" name="author">
+
+    {#    {% static 'app/' %}#}
+    <!-- Favicons -->
+    <link href="{% static 'app/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'app/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'app/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-phone d-flex align-items-center"><span>+254 712 345 678</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon - Sat: 8 AM - 11 PM</span></i>
+        </div>
+
+        <div class="languages d-none d-md-flex align-items-center">
+            <ul>
+                <li>Bon Appétit!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+        <h1 class="logo me-auto me-lg-0"><a href="#">Food Palace</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+                <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+                <li><a class="nav-link scrollto" href="#events">Events</a></li>
+                <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+        <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Welcome to <span style="font-family: monospace">Food Palace</span></h1>
+                <h2>Delivering great food for more than 18 years!</h2>
+
+                <div class="btns">
+                    <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+                    <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in"
+                 data-aos-delay="200">
+                {#          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>#}
+            </div>
+
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="about-img">
+                        <img src="{% static 'app/img/about.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <h3>"Food Palace is a platform dedicated to revolutionizing your culinary experience.</h3>
+                    <p class="fst-italic">
+                        What we have to offer!
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> Diverse Culinary Experience.</li>
+                        <li><i class="bi bi-check-circle"></i> User-Friendly Interface.</li>
+                        <li><i class="bi bi-check-circle"></i> Personalized Recommendations.</li>
+                        <li><i class="bi bi-check-circle"></i> Community Engagement.</li>
+                        <li><i class="bi bi-check-circle"></i> Quality Assurance.</li>
+                    </ul>
+                    <p>
+                        Our mission is to connect people through delicious food, offering a wide range of recipes,
+                        cooking tips, and meal ideas curated by culinary experts worldwide. With a user-friendly
+                        interface and personalized recommendations, we cater to diverse tastes and dietary preferences.
+                        Join our vibrant food community, where quality, accessibility, and enjoyment of cooking are at
+                        the heart of everything we do. At Food Palace, we aim to inspire culinary exploration, making
+                        cooking an enjoyable and rewarding journey for all."
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Why Us</h2>
+                <p>Why Choose Our Restaurant</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                        <span>01</span>
+                        <h4>Diverse Culinary Experience</h4>
+                        <p>Food Palace offers an extensive variety of recipes spanning international cuisines and local
+                            favorites, ensuring there's something for everyone's taste buds.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                        <span>02</span>
+                        <h4>Personalized and User-Friendly Experience</h4>
+                        <p> With a user-friendly interface and personalized recommendations, Food Palace tailors its
+                            offerings to match individual tastes and dietary requirements.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                        <span>03</span>
+                        <h4> Engaging Community and Quality Assurance</h4>
+                        <p> Food Palace upholds high standards of quality assurance, ensuring that every recipe, cooking
+                            tip, and piece of content meets our commitment to excellence</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Menu</h2>
+                <p>Check Our Tasty Menu</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-starters">Starters</li>
+                        <li data-filter=".filter-salads">Salads</li>
+                        <li data-filter=".filter-specialty">Specialty</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{% static 'app/img/menu/lobster-bisque.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Lobster Bisque</a><span>910 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        A luxurious and creamy soup made from lobster meat, broth, onions, cream, and seasoned with a
+                        blend of herbs and spices.
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="{% static 'app/img/menu/bread-barrel.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Bread Barrel</a><span>800 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        A rustic artisanal bread loaf hollowed out and filled with a choice of savory fillings, such as
+                        cheesy spinach dip, garlic butter, or creamy mushroom medley
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{% static 'app/img/menu/cake.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Crab Cake</a><span>600 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{% static 'app/img/menu/caesar.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Caesar Selections</a><span>750 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        A selection of Caesar salad variations featuring crisp romaine lettuce, croutons, Parmesan
+                        cheese, and Caesar dressing
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="{% static 'app/img/menu/tuscan-grilled.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Tuscan Grilled</a><span>1,010 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="{% static 'app/img/menu/mozzarella.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Mozzarella Stick</a><span>500 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Golden-fried sticks of fresh mozzarella cheese coated in seasoned breadcrumbs, served with
+                        marinara or a tangy dipping sauce
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{% static 'app/img/menu/greek-salad.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Greek Salad</a><span>600 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="{% static 'app/img/menu/spinach-salad.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Spinach Salad</a><span>550 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Fresh spinach with mushrooms, hard-boiled egg, and warm bacon vinaigrette
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="{% static 'app/img/menu/lobster-roll.jpg' %}" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Lobster Roll</a><span>1200 Ksh</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Specials</h2>
+                <p>Check Our Specials</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Bread Barrel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Tuscan Grilled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Ramen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Lobster Roll</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 mt-4 mt-lg-0">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Bread Barrel</h3>
+                                    <p class="fst-italic">A rustic artisanal bread loaf hollowed out and filled with a
+                                        choice of savory fillings, such as cheesy spinach dip, garlic butter, or creamy
+                                        mushroom medley</p>
+                                    <p>Enjoy the warm, freshly baked bread barrel filled with your favorite savory
+                                        flavors, providing a comforting and delectable start to your dining
+                                        experience.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="{% static 'app/img/menu/bread-barrel.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Tuscan Grilled</h3>
+                                    <p class="fst-italic">Grilled chicken with provolone, artichoke hearts, and roasted
+                                        red pesto</p>
+                                    <p> Experience the robust flavors of Tuscany with our Tuscan Grilled selections,
+                                        showcasing perfectly grilled meats or vegetables infused with traditional Tuscan
+                                        seasonings, offering a hearty and satisfying dining experience.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="{% static 'app/img/menu/tuscan-grilled.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Ramen</h3>
+                                    <p class="fst-italic"> Ramen is a traditional Japanese noodle soup dish consisting
+                                        of wheat noodles served in a flavorful broth, often accompanied by toppings such
+                                        as sliced pork, soft-boiled eggs, seaweed, green onions, and other garnishes</p>
+                                    <p>Indulge in the authentic taste of Japan with our Ramen selections, featuring
+                                        aromatic and savory broth combined with perfectly cooked noodles and a variety
+                                        of toppings, providing a comforting and flavorful bowl of goodness.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="{% static 'app/img/specials-3.png' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Lobster Bisque</h3>
+                                    <p class="fst-italic">A luxurious and creamy soup made from lobster meat, broth,
+                                        onions, cream, and seasoned with a blend of herbs and spices</p>
+                                    <p>Indulge in the decadence of this classic French-inspired soup, featuring the
+                                        delicate flavors of lobster in a smooth and satisfying bisque</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="{% static 'app/img/menu/lobster-roll.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Events</h2>
+                <p>Organize Your Events in our Restaurant</p>
+            </div>
+
+            <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="{% static 'app/img/event-birthday.jpg' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Birthday Parties</h3>
+                                <div class="price">
+                                    <p><span>20,000 Ksh</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Food Palace offers a fantastic venue for hosting memorable and enjoyable birthday
+                                    parties. With our spacious and versatile facilities, coupled with a passion for
+                                    exceptional food and celebration, we create the perfect setting for your special
+                                    day.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check-circled"></i> Customizable Menus.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Event Planning Assistance.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Entertainment and Ambiance.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Our staff is committed to providing top-notch service, ensuring that you and your
+                                    guests have an exceptional experience. From attentive servers to accommodating
+                                    special requests, we aim to make your birthday celebration at Food Palace truly
+                                    unforgettable.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="{% static 'app/img/event-private.jpg' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Private Parties</h3>
+                                <div class="price">
+                                    <p><span>30,000 Ksh</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Host your private parties in our exclusive spaces, ensuring privacy and comfort for
+                                    you and your guests. From intimate gatherings to grand celebrations, our venue can
+                                    be customized to suit your event's requirements.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check-circled"></i> Exclusive Private Spaces.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Dedicated Event Coordination.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Comprehensive Event Services.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Create lasting memories with private events designed to cater exclusively to your
+                                    needs, ensuring an intimate and sophisticated celebration.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="row event-item">
+                            <div class="col-lg-6">
+                                <img src="{% static 'app/img/event-custom.jpg' %}" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                <h3>Custom Parties</h3>
+                                <div class="price">
+                                    <p><span>25,000 Ksh</span></p>
+                                </div>
+                                <p class="fst-italic">
+                                    Food Palace specializes in crafting unique and personalized party experiences.
+                                    Whether it's a themed birthday bash, a special milestone celebration, or a unique
+                                    culinary event, we cater to your specific preferences and needs.
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-check-circled"></i> Tailored Experiences.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Customized Menus and Services.
+                                    </li>
+                                    <li><i class="bi bi-check-circled"></i> Full Scale Event Services.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Create lasting memories with uniquely tailored parties designed to exceed
+                                    expectations, leaving a lasting impression on you and your guests.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Reservation</h2>
+                <p>Book a Table</p>
+            </div>
+
+            <form action="/forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+                  data-aos-delay="100">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                               data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                               data-rule="email" data-msg="Please enter a valid email">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                               data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 form-group mt-3">
+                        <input type="text" name="date" class="form-control" id="date" placeholder="Date"
+                               data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 form-group mt-3">
+                        <input type="text" class="form-control" name="time" id="time" placeholder="Time"
+                               data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 form-group mt-3">
+                        <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
+                               data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                        <div class="validate"></div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your booking request was sent. We will call back or send an Email to
+                        confirm your reservation. Thank you!
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Book a Table</button>
+                </div>
+            </form>
+
+        </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>What they're saying about us</p>
+            </div>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Food Palace offers an incredible variety of dishes, and each one is bursting with
+                                flavor! Tried their Lobster Bisque and Caesar Selections—absolutely delicious. Will
+                                definitely keep coming back for more.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'app/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img"
+                                 alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Businessman</h4>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Hosted my sister's birthday at Food Palace, and it was fantastic! The private event
+                                space was beautifully arranged, and the staff was incredibly accommodating. Thank you
+                                for making it a memorable celebration!
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'app/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img"
+                                 alt="">
+                            <h3>Sara Wilson</h3>
+                            <h4>Designer</h4>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                The team at Food Palace truly understands customization! Organized a custom-themed party
+                                here, and they nailed every detail. From the specially curated menu to the decor, it was
+                                exactly what I envisioned. Highly recommended!
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'app/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img"
+                                 alt="">
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                A friend recommended Food Palace, and I'm so glad I tried it! The Tuscan Grilled dish
+                                was exquisite, and the Ramen was authentic and flavorful. The ambiance added to the
+                                overall experience. Can't wait to explore more from their menu!
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'app/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img"
+                                 alt="">
+                            <h3>Matt Brandon</h3>
+                            <h4>Freelancer</h4>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Some photos from Our Restaurant</p>
+            </div>
+        </div>
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-0">
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-1.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-1.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-2.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-3.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-4.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-5.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-6.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-6.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-7.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-7.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="gallery-item">
+                        <a href="{% static 'app/img/gallery/gallery-8.jpg' %}" class="gallery-lightbox"
+                           data-gall="gallery-item">
+                            <img src="{% static 'app/img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Chefs</h2>
+                <p>Our Proffesional Chefs</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="{% static 'app/img/chefs/chefs-1.jpg' %}" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Walter White</h4>
+                                <span>Master Chef</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="{% static 'app/img/chefs/chefs-2.jpg' %}" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Sarah Jhonson</h4>
+                                <span>Patissier</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="{% static 'app/img/chefs/chefs-3.jpg' %}" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>William Anderson</h4>
+                                <span>Cook</span>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        {# Google Map Location #}
+        {#      <div data-aos="fade-up">#}
+        {#        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7971276007243!2d36.79260477418321!3d-1.296355735635553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11b50705ea19%3A0x6f05af3dee1ae9df!2sThe%20Monarch%20Hotel!5e0!3m2!1sen!2ske!4v1701207379907!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><iframe frameborder="0" allowfullscreen></iframe>#}
+        {#      </div>#}
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row mt-2">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Rose Avenue Street, Along Ngong Road</p>
+                        </div>
+
+                        <div class="open-hours">
+                            <i class="bi bi-clock"></i>
+                            <h4>Open Hours:</h4>
+                            <p>
+                                Monday-Saturday:<br>
+                                8:00 AM - 11:00 PM
+                            </p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>foodpalace@gmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+254 712 345 678</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="/forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                       required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                   required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="8" placeholder="Message"
+                                      required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top align-items-center">
+        <div class="container align-items-center">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                        <h3 style="color: burlywood">Food Palace</h3>
+                        <p>
+                            Rose Avenue Street <br><br>
+                            Along Ngong Road <br><br>
+                            <strong>Phone:</strong> +254 712 345 678 <br><br>
+                            <strong>Email:</strong> foodpalace@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 style="color: burlywood">Quick Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#menu">Our Menu</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#book-a-table"></a>Book a Table</li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 style="color: burlywood">Our Services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> Diverse Culinary Experience</li>
+                        <li><i class="bx bx-chevron-right"></i> User Friendly Interface</li>
+                        <li><i class="bx bx-chevron-right"></i> Quality Assurance</li>
+                        <li><i class="bx bx-chevron-right"></i> Host Events</li>
+                        <li><i class="bx bx-chevron-right"></i> Community Engagement</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 style="color: burlywood">Social Media</h4>
+                    <ul>
+                        <div class="social-links mt-3">
+                            <li><a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> Twitter</li>
+                            <li><a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> Facebook</li>
+                            <li><a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> Instagram</li>
+                            {#              <li><a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> Skype</li>#}
+                            <li><a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> LinkedIn</li>
+                        </div>
+                    </ul>
+                </div>
+
+                {# Newsletter Code #}
+                {#          <div class="col-lg-4 col-md-6 footer-newsletter">#}
+                {#            <h4>Our Newsletter</h4>#}
+                {#            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>#}
+                {#            <form action="" method="post">#}
+                {#              <input type="email" name="email"><input type="submit" value="Subscribe">#}
+                {#            </form>#}
+                {##}
+                {#          </div>#}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span style="color: burlywood;">Food Palace</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="#">George Saning'o</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'app/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'app/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'app/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'app/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'app/vendor/php-email-form/validate.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'app/js/main.js' %}"></script>
+
+</body>
+
+</html>
