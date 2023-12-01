@@ -23,16 +23,6 @@
   $book_a_table->from_email = $_POST['email'];
   $book_a_table->subject = "New table booking request from the website";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $book_a_table->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
   $book_a_table->add_message( $_POST['name'], 'Name');
   $book_a_table->add_message( $_POST['email'], 'Email');
   $book_a_table->add_message( $_POST['phone'], 'Phone', 4);
