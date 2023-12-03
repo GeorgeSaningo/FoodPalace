@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'mainapp.apps.MainappConfig',
     'crispy_forms',
     'crispy_bootstrap5',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
@@ -149,3 +150,5 @@ MESSAGE_TAGS = {
     messages.DEBUG: "alert-dark",
     messages.WARNING: "alert-warning",
 }
+
+LOGIN_URL = "/signin"

@@ -24,8 +24,11 @@ from mainapp import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('guest/<int:guest_id>', views.guest, name="guest"),
-    path('guest/add', views.add, name="add"),
-    path('book_table', views.book_table, name="book_table"),
+    path('signin', views.signin, name="signin"),
+    path('signout', views.signout, name="signout"),
+    path('bookings', views.all_bookings, name="all"),
+    path('search', views.search_bookings, name="search"),
+    path('bookings/<int:book_id>', views.booking_details, name="details"),
+    path('bookings/delete/<int:book_id>', views.booking_delete, name="delete"),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

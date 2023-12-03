@@ -17,5 +17,5 @@ class BookingForm(forms.ModelForm):
 
 
 class LoginForm(forms.Form):
-    name = forms.CharField(max_length=60)
-    email = forms.CharField(max_length=60)
+    username = forms.CharField(max_length=60)
+    password = forms.CharField(max_length=60)
